@@ -1,0 +1,34 @@
+class AppStrings {
+  static const String noRouteFound = "No Route Found";
+  static const String noInternet = 'No internet connection.';
+  static const String httpErrorOccured = 'HTTP error occured.';
+  static const String invalidDataFormat = 'Invalid data format.';
+  static const String requestTimeOut = 'Request timedout.';
+  static const String unknownError = 'Unknown error occured.';
+  static const String badRequest = 'Bad request';
+  static const String forbidden = 'Forbidden';
+  static const String internalServerError = 'Internal server error';
+  static const String badGateway = 'Bad gateway';
+  static const String oopsWrong = 'Oops something went wrong';
+  static const String unableToProcess = 'Unable to process the request';
+  static const String apiNotResponde = 'Api not responding';
+  static const String unAuthorized = 'Unauthorized request';
+  static const String pageNotFound = 'Page not found';
+  static const String somethingWentWrong = 'Something went wrong! ';
+  static const String requestToAPICanceled = 'Request to API server was cancelled';
+  static const String connectionTimeOut = "Connection timeout with API server";
+  static const String receiveTimeOutInConnection = "Receive timeout in connection with API server";
+  static const String sendTimeOut = "Send timeout in connection with API server";
+  static const String unExpectedError = "Unexpected error occurred";
+  static const String noRoute = "No Route Found";
+  static const String signIn = "Sign In";
+  static const String providerName = "Provider Name";
+  static const String password = "Password";
+  static const String forgetPassword = "Forget Password ?";
+  static const String donnotHaveAccount = "Don't have an account?";
+  static const String haveAccount = "Have an account?";
+  static const String signUp = "Sign Up";
+  static const String userName = "User Name";
+  static const String phoneNumber = "Phone Number";
+  static const String companyName = "Company Name";
+}
