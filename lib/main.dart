@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:test_app/data/network/API.dart';
 import 'DI/d_injection.dart';
 import 'core/values/routes_manager.dart';
 import 'core/values/theme_manager.dart';
-import 'data/local/shared_preferences.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -12,12 +10,6 @@ void main() {
   // initialize dependency inlection
   DependencyInjection.setup();
 
-  // initalize dio;
-  Api.init();
-
-  // initalize shared
-  SharedPrefrencesHelper.init();
-  
   runApp(const MyApp());
 }
 

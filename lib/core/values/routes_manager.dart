@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/UI/home/home.dart';
 import 'package:test_app/UI/screens/splash/splash_screen.dart';
 import 'package:test_app/core/values/strings_manager.dart';
 
@@ -9,6 +10,7 @@ class RoutesManager {
   static const String splashRoute = "/";
   static const String loginRoute = "/login";
   static const String registerRoute = "/register";
+  static const String homeRoute = "/home";
 }
 
 class RouteGenetator {
@@ -18,11 +20,13 @@ class RouteGenetator {
         return MaterialPageRoute(builder: (_) => const SplashScreen());
 
       case RoutesManager.loginRoute:
-        return MaterialPageRoute(builder: (_) =>  LoginScreen());
+        return MaterialPageRoute(builder: (_) => LoginScreen());
 
       case RoutesManager.registerRoute:
-        return MaterialPageRoute(builder: (_) =>  RegisterScreen());
-        
+        return MaterialPageRoute(builder: (_) => RegisterScreen());
+      case RoutesManager.homeRoute:
+        return MaterialPageRoute(builder: (_) => HomeScreen());
+
       default:
         return unDefinedRoute();
     }
@@ -33,9 +37,9 @@ class RouteGenetator {
       builder: (context) {
         return Scaffold(
           appBar: AppBar(
-            title:const  Text(AppStrings.noRoute),
+            title: const Text(AppStrings.noRoute),
           ),
-          body:const  Center(child: Text(AppStrings.noRoute)),
+          body: const Center(child: Text(AppStrings.noRoute)),
         );
       },
     );

@@ -1,30 +1,15 @@
 import 'package:dio/dio.dart';
+import 'package:test_app/DI/d_injection.dart';
 
 import '../../core/values/constants.dart';
 import '../../core/values/rest_full_api_enums.dart';
 import '../../helper/api_errors/response_exceptions.dart';
 
-
 class Api {
-  static Dio? dio;
-
-  static void init() {
-    dio = Dio(BaseOptions(
-        baseUrl: Constants.baseUrl, receiveDataWhenStatusError: true))
-      ..interceptors.add(LogInterceptor(
-          request: true,
-          requestBody: true,
-          error: true,
-          responseHeader: false,
-          responseBody: true,
-          requestHeader: false));
-  }
+  static Dio? dio = DependencyInjection.getIt<Dio>();
 
   static dynamic manageApiWithoutHeader({rest, path, data}) async {
-    dio!.options.headers = {
-      "Content-Type": "application/json",
-      "lang": "en"
-    };
+    dio!.options.headers = {"Content-Type": "application/json", "lang": "en"};
     if (rest == RestFulApi.POST) {
       try {
         return await dio!.post(
@@ -79,6 +64,4 @@ class Api {
       }
     }
   }
-
- 
 }

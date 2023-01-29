@@ -1,10 +1,9 @@
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:test_app/DI/d_injection.dart';
 
 class SharedPrefrencesHelper {
-  static SharedPreferences? sharedPreferences;
-  static init() async {
-    sharedPreferences = await SharedPreferences.getInstance();
-  }
+  static SharedPreferences? sharedPreferences =
+      DependencyInjection.getIt<SharedPreferences>();
 
   /// save string
   static Future<bool> saveString({key, value}) async {

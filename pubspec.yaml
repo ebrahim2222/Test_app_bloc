@@ -47,6 +47,7 @@ dependencies:
   get_it: ^7.2.0
   dartz: ^0.10.1
   connectivity:
+  proste_bezier_curve: ^2.0.2
 dev_dependencies:
   flutter_test:
     sdk: flutter

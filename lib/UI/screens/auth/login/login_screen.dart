@@ -97,7 +97,7 @@ class LoginScreen extends StatelessWidget {
                                 InkWell(
                                   onTap: () {
                                     navigateToScreen(
-                                        context, RoutesManager.registerRoute);
+                                        context, RoutesManager.homeRoute);
                                   },
                                   child: Text(AppStrings.signUp,
                                       style: getMediumStyle(
