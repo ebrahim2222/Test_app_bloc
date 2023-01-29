@@ -8,7 +8,7 @@ import '../core/data/network/API.dart';
 class LoginRepo {
   LoginModel? loginModel;
   Future<Either<String, LoginModel>> login(formData) async {
-    var value = await Api.manageApiWithoutHeader(
+    var value = await Api.sendRequest(
         rest: RestFulApi.POST, path: ApiManager.loginPath, data: formData);
     if (value is String) {
       return Left(value);

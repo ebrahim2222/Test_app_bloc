@@ -8,7 +8,7 @@ import '../core/data/network/API.dart';
 class RegisterRepo {
   RegisterModel? registerModel;
   Future<Either<String, RegisterModel>> register(formData) async {
-    var value = await Api.manageApiWithoutHeader(
+    var value = await Api.sendRequest(
         rest: RestFulApi.POST, path: ApiManager.registerPath, data: formData);
     if (value is String) {
       return Left(value);
