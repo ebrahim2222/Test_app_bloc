@@ -1,5 +1,5 @@
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:test_app/DI/d_injection.dart';
+import 'package:test_app/core/DI/d_injection.dart';
 
 class SharedPrefrencesHelper {
   static SharedPreferences? sharedPreferences =

@@ -3,7 +3,7 @@ import 'package:test_app/models/register_model.dart';
 import 'dart:convert';
 import '../core/values/api_manager.dart';
 import '../core/values/rest_full_api_enums.dart';
-import '../data/network/API.dart';
+import '../core/data/network/API.dart';
 
 class RegisterRepo {
   RegisterModel? registerModel;

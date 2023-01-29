@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
-import 'package:test_app/DI/d_injection.dart';
+import 'package:test_app/core/DI/d_injection.dart';
 
-import '../../core/values/constants.dart';
-import '../../core/values/rest_full_api_enums.dart';
+import '../../values/constants.dart';
+import '../../values/rest_full_api_enums.dart';
 import '../../helper/api_errors/response_exceptions.dart';
 
 class Api {

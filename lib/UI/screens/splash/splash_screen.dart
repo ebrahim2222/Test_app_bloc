@@ -5,7 +5,7 @@ import 'package:test_app/core/values/routes_manager.dart';
 
 import '../../../core/values/assets_manager.dart';
 import '../../../core/values/color_manager.dart';
-import '../../../helper/navigate_to_screen.dart';
+import '../../../core/helper/navigate_to_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -36,7 +36,6 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(child: Image.asset(AssetsManager.logo)),
     );
   }
-
 
   @override
   void dispose() {

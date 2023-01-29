@@ -7,12 +7,12 @@ import 'package:test_app/core/values/routes_manager.dart';
 import 'package:test_app/core/values/strings_manager.dart';
 import 'package:test_app/core/values/values_manager.dart';
 
-import '../../../../DI/d_injection.dart';
+import '../../../../core/DI/d_injection.dart';
 import '../../../../core/values/assets_manager.dart';
 import '../../../../core/values/color_manager.dart';
 import '../../../../core/values/font_manager.dart';
 import '../../../../core/values/styles_manager.dart';
-import '../../../../helper/navigate_to_screen.dart';
+import '../../../../core/helper/navigate_to_screen.dart';
 import 'login_text_field.dart';
 
 class LoginScreen extends StatelessWidget {

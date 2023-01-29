@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'DI/d_injection.dart';
+import 'core/DI/d_injection.dart';
 import 'core/values/routes_manager.dart';
 import 'core/values/theme_manager.dart';
 

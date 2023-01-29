@@ -4,7 +4,7 @@ import 'package:test_app/core/check_internet.dart';
 import 'package:test_app/models/login_model.dart';
 import 'package:test_app/repo/login_repo.dart';
 import 'package:dio/dio.dart' as dio;
-import '../../DI/d_injection.dart';
+import '../../core/DI/d_injection.dart';
 
 part 'login_event.dart';
 part 'login_state.dart';

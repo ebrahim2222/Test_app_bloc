@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:test_app/DI/d_injection.dart';
+import 'package:test_app/core/DI/d_injection.dart';
 import 'package:test_app/UI/screens/auth/register/register_text_field.dart';
 import 'package:test_app/bloc/register_bloc/register_bloc.dart';
 import 'package:test_app/core/screen_size.dart';
@@ -12,7 +12,7 @@ import '../../../../core/values/assets_manager.dart';
 import '../../../../core/values/color_manager.dart';
 import '../../../../core/values/font_manager.dart';
 import '../../../../core/values/styles_manager.dart';
-import '../../../../helper/navigate_to_screen.dart';
+import '../../../../core/helper/navigate_to_screen.dart';
 import '../../../widgets/button_component.dart';
 
 class RegisterScreen extends StatelessWidget {

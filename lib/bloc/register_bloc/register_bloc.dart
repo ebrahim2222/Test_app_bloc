@@ -5,7 +5,7 @@ import 'package:test_app/core/check_internet.dart';
 import 'package:test_app/models/register_model.dart';
 import 'package:test_app/repo/register_repo.dart';
 
-import '../../DI/d_injection.dart';
+import '../../core/DI/d_injection.dart';
 import 'package:dio/dio.dart' as dio;
 part 'register_event.dart';
 part 'register_state.dart';
